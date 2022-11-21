@@ -3,7 +3,7 @@
 
     $id = $_GET['id'];
 
-    $result = mysqli_query($dbc, "SELECT * FROM tblsubjects WHERE subject_id=$id");
+    $result = mysqli_query($dbc, "SELECT * FROM tblsubjects WHERE subject_id='$id'");
 
     while($res = mysqli_fetch_array($result)){
         $code = $res['subject_code'];
